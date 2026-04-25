@@ -1,0 +1,19 @@
+﻿using System.ComponentModel.DataAnnotations.Schema;
+using System.ComponentModel.DataAnnotations;
+
+namespace Controle_De_Estoque.Models
+{
+    [Table("Venda")]
+    public class Venda
+    {
+        [Key]
+        public Guid Id { get; set; }
+        [Required]
+        public DateTime Data { get; set; } = DateTime.UtcNow;
+        [Required]
+        public Usuario FkUsuario { get; set; }
+
+        [ForeignKey("FkUsuario")]
+        public virtual Usuario Usuario { get; set; }
+    }
+}
