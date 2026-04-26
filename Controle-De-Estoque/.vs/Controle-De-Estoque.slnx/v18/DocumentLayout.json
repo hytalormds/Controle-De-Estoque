@@ -1,7 +1,12 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\hytal\\Desktop\\Ideias\\Controle-De-Estoque\\Controle-De-Estoque\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8594A136-2905-89AB-92B4-2FD2C93F89E2}|Controle-De-Estoque\\Controle-De-Estoque.csproj|c:\\users\\hytal\\desktop\\ideias\\controle-de-estoque\\controle-de-estoque\\controle-de-estoque\\models\\itemvenda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8594A136-2905-89AB-92B4-2FD2C93F89E2}|Controle-De-Estoque\\Controle-De-Estoque.csproj|solutionrelative:controle-de-estoque\\models\\itemvenda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 1,
@@ -9,11 +14,24 @@
       "DocumentGroups": [
         {
           "DockedHeight": 132,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ItemVenda.cs",
+              "DocumentMoniker": "C:\\Users\\hytal\\Desktop\\Ideias\\Controle-De-Estoque\\Controle-De-Estoque\\Controle-De-Estoque\\Models\\ItemVenda.cs",
+              "RelativeDocumentMoniker": "Controle-De-Estoque\\Models\\ItemVenda.cs",
+              "ToolTip": "C:\\Users\\hytal\\Desktop\\Ideias\\Controle-De-Estoque\\Controle-De-Estoque\\Controle-De-Estoque\\Models\\ItemVenda.cs",
+              "RelativeToolTip": "Controle-De-Estoque\\Models\\ItemVenda.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-26T18:09:30.775Z",
+              "EditorCaption": ""
             }
           ]
         }

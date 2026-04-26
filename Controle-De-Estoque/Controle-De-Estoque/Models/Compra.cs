@@ -16,7 +16,7 @@ namespace Controle_De_Estoque.Models
         public Fornecedor FkFornecedor { get; set; }
 
         [ForeignKey("FkFornecedor")]
-        public virtual Usuario Fornecedor { get; set; }
+        public virtual Fornecedor Fornecedor { get; set; }
 
         [ForeignKey("FkUsuario")]
         public virtual Usuario Usuario { get; set; }

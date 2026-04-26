@@ -13,9 +13,11 @@ namespace Controle_De_Estoque.Models
         public string Nome { get; set; }
         [Required]
         [MaxLength(20)]
+        [Phone]
         public string Telefone { get; set; }
         [Required]
         [MaxLength(150)]
+        [EmailAddress]
         public string Email { get; set; }
     }
 }

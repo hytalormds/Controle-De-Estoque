@@ -22,6 +22,7 @@ namespace Controle_De_Estoque.Models
         public string SenhaHash { get; set; }
         [Required]
         [MaxLength(255)]
+        [EmailAddress]
         public string Email { get; set; }
         [Required]
         public PerfilUsuario Perfil { get; set; }
