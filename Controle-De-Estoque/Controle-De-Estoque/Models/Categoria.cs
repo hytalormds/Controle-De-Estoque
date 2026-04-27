@@ -7,9 +7,10 @@ namespace Controle_De_Estoque.Models
     public class Categoria
     {
         [Key]
-        public Guid Id { get; set; }
-        [Required]
-        [MaxLength(100)]
+        public Guid CategoriaId { get; set; }
+        [Required, MaxLength(100)]
         public string Nome { get; set; }
+        public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
+        public DateTime UpdatedAt { get; set; }
     }
 }

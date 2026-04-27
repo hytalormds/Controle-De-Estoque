@@ -7,18 +7,17 @@ namespace Controle_De_Estoque.Models
     public class Compra
     {
         [Key]
-        public Guid Id { get; set; }
+        public Guid CompraId { get; set; }
         [Required]
         public DateTime Data { get; set; } = DateTime.UtcNow;
         [Required]
-        public Usuario FkUsuario { get; set; }
+        public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
+        public DateTime UpdatedAt { get; set; }
         [Required]
-        public Fornecedor FkFornecedor { get; set; }
-
-        [ForeignKey("FkFornecedor")]
-        public virtual Fornecedor Fornecedor { get; set; }
-
-        [ForeignKey("FkUsuario")]
-        public virtual Usuario Usuario { get; set; }
+        public Guid UsuarioId { get; set; }
+        [Required]
+        public Guid FornecedorId { get; set; }
+        public Fornecedor Fornecedor { get; set; }
+        public Usuario Usuario { get; set; }
     }
 }

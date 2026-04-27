@@ -13,26 +13,24 @@ namespace Controle_De_Estoque.Models
         }
 
         [Key]
-        public Guid Id { get; set; }
+        public Guid MovimentacaoId { get; set; }
         [Required]
         public TipoTransacao Tipo { get; set; }
         [Required]
         public int Quantidade { get; set; }
         [Required]
         public DateTime Data { get; set; } = DateTime.UtcNow;
-        [Required]
-        [MaxLength(255)]
+        [Required, MaxLength(255)]
         public string Motivo { get; set; }
+        public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
+        public DateTime UpdatedAt { get; set; }
 
         [Required]
-        public Produto FkProduto { get; set; }
+        public Guid ProdutoId { get; set; }
         [Required]
-        public Usuario FkUsuario { get; set; }
+        public Guid UsuarioId { get; set; }
+        public Produto Produto { get; set; }
 
-        [ForeignKey("FkProduto")]
-        public virtual Produto Produto { get; set; }
-
-        [ForeignKey("FkUsuario")]
-        public virtual Usuario Usuario { get; set; }
+        public Usuario Usuario { get; set; }
     }
 }

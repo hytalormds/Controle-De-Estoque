@@ -7,20 +7,18 @@ namespace Controle_De_Estoque.Models
     public class ItemCompra
     {
         [Key]
-        public Guid Id { get; set; }
+        public Guid ItemCompraId { get; set; }
         [Required]
         public int Quantidade { get; set; }
-        [Required]
-        [Column(TypeName = "decimal(10,2)")]
+        [Required, Column(TypeName = "decimal(10,2)")]
         public decimal Preco { get; set; }
+        public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
+        public DateTime UpdatedAt { get; set; }
         [Required]
-        public Compra FkCompra { get; set; }
+        public Guid CompraId { get; set; }
         [Required]
-        public Produto FkProduto { get; set; }
-
-        [ForeignKey("FkCompra")]
-        public virtual Compra Compra { get; set; }
-        [ForeignKey("FkProduto")]
-        public virtual Produto Produto { get; set; }
+        public Guid ProdutoId { get; set; }
+        public Compra Compra { get; set; }
+        public Produto Produto { get; set; }
     }
 }

@@ -7,20 +7,21 @@ namespace Controle_De_Estoque.Models
     public class ItemVenda
     {
         [Key]
-        public Guid Id { get; set; }
+        public Guid ItemVendaId { get; set; }
         [Required]
         public int Quantidade { get; set; }
-        [Required]
-        [Column(TypeName ="decimal(10,2")]
+        [Required, Column(TypeName = "decimal(10,2)")]
         public decimal Preco { get; set; }
+        public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
+        public DateTime UpdatedAt { get; set; }
         [Required]
-        public Produto FkProduto { get; set; }
+        public Guid ProdutoId { get; set; }
         [Required]
-        public Venda FkVenda { get; set; }
-
-        [ForeignKey("FkProduto")]
-        public virtual Produto Produto { get; set; }
-        [ForeignKey("FkFornecedor")]
-        public virtual Fornecedor Fornecedor { get; set; }
+        public Guid FornecedorId { get; set; }
+        [Required]
+        public Guid VendaId { get; set; }
+        public Produto Produto { get; set; }
+        public Fornecedor Fornecedor { get; set; }
+        public Venda Venda { get; set; }
     }
 }
